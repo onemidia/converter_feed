@@ -46,6 +46,7 @@ def send_data_to_xibo(data, token):
     """Envia dados para a API do Xibo."""
     url = f'{XIBO_URL}dataset/data/{DATASET_ID}'
     headers = {'Authorization': f'Bearer {token}', 'Content-Type': 'application/json'}
+    print(f"Enviando dados para o Xibo: {json.dumps(data, indent=4)}") # Adicione esta linha
     try:
         response = requests.post(url, headers=headers, json=data)
         response.raise_for_status()
