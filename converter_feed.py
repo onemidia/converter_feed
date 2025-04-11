@@ -12,7 +12,7 @@ XIBO_URL = os.environ.get('XIBO_URL')
 CLIENT_ID = os.environ.get('CLIENT_ID')
 CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
 DATASET_ID = os.environ.get('DATASET_ID')
-FEED_URL = os.environ.get('FEED_URL')
+FEED_URL = os.environ.get('FEED_URL')  # URL do feed RSS a ser configurada no Render
 
 # Variável para armazenar o token de acesso
 access_token_data = {'token': None, 'expires_at': 0}
