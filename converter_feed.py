@@ -24,7 +24,7 @@ def get_xibo_token():
         print("Token de acesso ainda válido, reutilizando.")
         return access_token_data['token']
 
-    token_url = f'{XIBO_URL}oauth/access_token'
+    token_url = f'{XIBO_URL}authorize/access_token'
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
     data = {
         'grant_type': 'client_credentials',
